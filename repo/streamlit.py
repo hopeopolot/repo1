@@ -1,4 +1,4 @@
-```python
+
 import streamlit as st
 import pandas as pd
 import joblib
@@ -243,4 +243,3 @@ st.divider()
 st.caption(
     "CasePath Uganda | Academic Machine Learning Project"
 )
-```
