@@ -17,7 +17,10 @@ st.set_page_config(
 # Load the complete trained system
 @st.cache_resource
 def load_casepath():
-    bundle = joblib.load("casepath_uganda_complete_system.pkl")
+   from pathlib import Path
+
+bundle_path = Path(__file__).parent / "casepath_uganda_complete_system.pkl"
+bundle = joblib.load(bundle_path)
     return bundle
 
 try:
